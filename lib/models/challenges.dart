@@ -13,5 +13,15 @@ class Challenges {
           name: 'Tinder',
           route: AppRoutes.tinder,
         ),
+        Challenge(
+          id: 'animated-button-one',
+          name: 'Animated Button One',
+          route: AppRoutes.animatedButtonOne,
+        ),
+        Challenge(
+          id: 'animated-scroll-view-one',
+          name: 'Animated Scroll View One',
+          route: AppRoutes.animatedScrollViewOne,
+        ),
       ];
 }

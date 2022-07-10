@@ -18,7 +18,7 @@ class HomePage extends StatelessWidget {
         child: ListView.builder(
           itemCount: _challenges.length,
           itemBuilder: (_, index) => InkWell(
-            onTap: () => Navigator.of(context).pushReplacementNamed(
+            onTap: () => Navigator.of(context).pushNamed(
               _challenges[index].route,
             ),
             child: Container(

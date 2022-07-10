@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:masterclass/routes/app_routes.dart';
 import 'package:masterclass/theme/app_images.dart';
 
 import 'components/sign_in_button.dart';
@@ -96,21 +95,21 @@ class TinderPage extends StatelessWidget {
                     image: AppImages.apple,
                     text: 'Sign In With Apple',
                     onTap: () => Navigator.of(context)
-                        .pushReplacementNamed(AppRoutes.home),
+                        .pop(),
                   ),
                   const SizedBox(height: 10),
                   SignInButton(
                     image: AppImages.facebook,
                     text: 'Sign In With Facebook',
                     onTap: () => Navigator.of(context)
-                        .pushReplacementNamed(AppRoutes.home),
+                        .pop(),
                   ),
                   const SizedBox(height: 10),
                   SignInButton(
                     image: AppImages.bubble,
                     text: 'Sign In With Phone Number',
                     onTap: () => Navigator.of(context)
-                        .pushReplacementNamed(AppRoutes.home),
+                        .pop(),
                   ),
                   const Padding(
                     padding: EdgeInsets.fromLTRB(0, 25, 0, 50),
@@ -131,7 +130,7 @@ class TinderPage extends StatelessWidget {
               top: 40,
               child: IconButton(
                 onPressed: () =>
-                    Navigator.of(context).pushReplacementNamed(AppRoutes.home),
+                    Navigator.of(context).pop(),
                 icon: const Icon(
                   Icons.arrow_back_ios,
                   size: 26,

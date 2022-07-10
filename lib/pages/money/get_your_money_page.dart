@@ -63,7 +63,7 @@ class GetYourMoneyPage extends StatelessWidget {
               text: 'Sign Up with Email ID',
               color: const Color(0xFF5e5ce5),
               onTap: () =>
-                  Navigator.of(context).pushReplacementNamed(AppRoutes.home),
+                  Navigator.of(context).pop(),
             ),
             const SizedBox(height: 20),
             SingnInButton(
@@ -72,7 +72,7 @@ class GetYourMoneyPage extends StatelessWidget {
               image: AppImages.googleLogo,
               textColor: Colors.black,
               onTap: () =>
-                  Navigator.of(context).pushReplacementNamed(AppRoutes.home),
+                  Navigator.of(context).pop(),
             ),
             const SizedBox(height: 50),
             Text.rich(
