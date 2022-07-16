@@ -31,8 +31,13 @@ class _AnimatedExpesionCustomState extends State<AnimatedExpesionCustom>
       setState(() {});
     });
 
-    animationReact =
-        Tween<double>(begin: 0, end: 200).animate(animationController);
+    animationReact = Tween<double>(begin: 0, end: 200).animate(
+      CurvedAnimation(
+        parent: animationController,
+        curve: Curves.easeInOut,
+        reverseCurve: Curves.easeInOut,
+      ),
+    );
   }
 
   @override

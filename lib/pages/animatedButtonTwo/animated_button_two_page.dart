@@ -32,10 +32,20 @@ class _AnimatedButtonTwoPageState extends State<AnimatedButtonTwoPage>
     animationAlignment =
         Tween<Alignment>(begin: Alignment.bottomRight, end: Alignment.topCenter)
             .animate(animationController);
-    animationReact =
-        Tween<double>(begin: 50, end: 100).animate(animationController);
-    animationRadius =
-        Tween<double>(begin: 25, end: 0).animate(animationController);
+    animationReact = Tween<double>(begin: 50, end: 100).animate(
+      CurvedAnimation(
+        parent: animationController,
+        curve: Curves.easeInOut,
+        reverseCurve: Curves.easeInOut,
+      ),
+    );
+    animationRadius = Tween<double>(begin: 25, end: 0).animate(
+      CurvedAnimation(
+        parent: animationController,
+        curve: Curves.easeInOut,
+        reverseCurve: Curves.easeInOut,
+      ),
+    );
   }
 
   @override
