@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 
 import 'routes/app_routes.dart';
 
+import 'pages/animatedScrollViewTwo/animated_scroll_view_two_page.dart';
 import 'pages/animatedScrollViewOne/animated_scroll_view_one_page.dart';
+import 'pages/animatedButtonTwo/animated_button_two_page.dart';
 import 'pages/animatedButtonOne/animated_button_one_page.dart';
 import 'pages/money/get_your_money_page.dart';
 import 'pages/tinder/tinder_page.dart';
@@ -25,6 +27,8 @@ class App extends StatelessWidget {
         AppRoutes.tinder: (ctx) => const TinderPage(),
         AppRoutes.animatedButtonOne: (ctx) => const AnimatedButtonOnePage(),
         AppRoutes.animatedScrollViewOne: (ctx) => const AnimatedScrollViewOne(),
+        AppRoutes.animatedButtonTwo: (ctx) => const AnimatedButtonTwoPage(),
+        AppRoutes.animatedScrollViewTwo: (ctx) => const AnimatedScrollViewTwo(),
       },
       debugShowCheckedModeBanner: false,
     );

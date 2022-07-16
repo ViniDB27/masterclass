@@ -23,5 +23,15 @@ class Challenges {
           name: 'Animated Scroll View One',
           route: AppRoutes.animatedScrollViewOne,
         ),
+        Challenge(
+          id: 'animated-button-two',
+          name: 'Animated Button Two',
+          route: AppRoutes.animatedButtonTwo,
+        ),
+        Challenge(
+          id: 'animated-scroll-view-two',
+          name: 'Animated Scroll View Two',
+          route: AppRoutes.animatedScrollViewTwo,
+        ),
       ];
 }
